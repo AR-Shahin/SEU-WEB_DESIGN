@@ -1,0 +1,103 @@
+#heading {
+  text-align: center;
+  /* color: #16a085; */
+  color: rgb(255, 99, 71);
+}
+/* Global Selector*/
+* {
+  /* color: red; */
+}
+/* comment d*/
+/* h1,
+p,
+span {
+  color: red;
+} */
+.another_class {
+}
+
+/* .background {
+  background-image: url("./img/bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+body {
+  /* background-image: url("./img/bg.jpeg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.background {
+  background: url("./img/bg.jpeg") no-repeat right top;
+  background-size: cover;
+}
+
+#border,
+/* span {
+  border: 5px dotted red;
+} */
+h3 {
+  background: red;
+  color: #fff;
+  /* margin-left: 100px;
+  margin-right: 50px;
+  margin-top: 100px; */
+}
+h3 {
+  margin: 50px 100px;
+}
+
+h4 {
+  background: teal;
+  /* padding-left: 30px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px; */
+  padding: 10px 50px;
+}
+
+#test {
+  background: green;
+  width: 100px;
+  height: 100px;
+}
+
+#test2 {
+  background: red;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#format {
+  color: red;
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: lowercase;
+}
+#span2 {
+  color: green;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  padding: 10px 25px;
+  background: green;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#box {
+  height: 100px;
+  width: 200px;
+  border: 1px solid red;
+}
+
+#box p {
+  padding: 100px;
+}
