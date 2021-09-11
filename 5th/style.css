@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Allison", cursive;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  background: red;
+  padding: 10px 25px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background: black;
+  color: red;
+}
+
+.btn:focus {
+  background: yellow;
+  color: red;
+}
+
+nav {
+  background: blue;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav ul {
+  padding: 10px 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #fff;
+}
+
+.inline {
+  background: red;
+  padding: 15px;
+}
+
+#position {
+  height: 100px;
+  width: 100px;
+  background: teal;
+  position: absolute;
+  /* top: 0; */
+  /* right: 0; */
+  bottom: 0;
+  left: 0;
+}
+
+#green {
+  height: 250px;
+  width: 450px;
+  background: green;
+  position: relative;
+}
+#red {
+  height: 100px;
+  width: 100px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo {
+  width: 50px;
+}
+.row {
+  float: left;
+  width: 100%;
+}
+
+.col30 {
+  width: 30%;
+  float: left;
+  background: red;
+}
+
+.col70 {
+  width: 70%;
+  float: left;
+  background: blue;
+}
+
+.col20 {
+  width: 20%;
+  float: left;
+}
+
+.col80 {
+  width: 80%;
+  float: left;
+}
+.col50 {
+  width: 48%;
+  float: left;
+  /* background: teal; */
+  margin: 0 10px;
+  padding: 0 15px;
+}
