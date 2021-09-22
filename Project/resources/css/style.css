@@ -12,6 +12,7 @@ body {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 .col-10 {
   flex-basis: 9%;
@@ -60,6 +61,9 @@ body {
 }
 .center {
   align-self: center;
+}
+.img-fluid {
+  width: 100%;
 }
 .btn-primary {
   background: red;
@@ -172,7 +176,66 @@ nav .icon-box i:hover {
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 15px;
+  /* position: relative;
+  overflow: hidden; */
+  position: relative;
+  overflow: hidden;
+  transition: 0.6s;
 }
+
+.left_icon_box {
+  position: absolute;
+  top: 5%;
+  left: -15%;
+  transition: 0.6s;
+}
+.left_icon_box i {
+  background: #ccc;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #130f40;
+  font-size: 18px;
+  padding: 10px;
+}
+.right_icon_box {
+  position: absolute;
+  top: 5%;
+  right: -15%;
+  transition: 0.2s;
+}
+.right_icon_box i {
+  background: #ccc;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #130f40;
+  font-size: 18px;
+  padding: 10px;
+}
+.card:hover .left_icon_box {
+  left: 5%;
+}
+.card:hover .right_icon_box {
+  right: 5%;
+}
+/* .card .left_icon_box {
+  position: absolute;
+  top: 10%;
+  left: -100%;
+  transition: 0.2s;
+}
+.card:hover .left_icon_box {
+  background: red;
+  left: 10%;
+} */
+/* .card .left_icon_box i {
+  background: red;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 3px;
+  cursor: pointer;
+} */
 h3 {
   color: #130f40;
   font-size: 22px;
@@ -193,4 +256,90 @@ h3 {
 
 .dishes_box {
   margin-top: 25px;
+}
+
+/* about section*/
+.about_section {
+  padding: 40px 0;
+}
+.about_section .abt_content {
+  margin-top: 30px;
+}
+.abt_content h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.abt_content p {
+  font-size: 16px;
+  color: #636e72;
+  line-height: 1.5;
+}
+
+.abt_btns {
+  margin-top: 25px;
+  padding: 10px 10px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.abt_btns .icon_box {
+  display: flex;
+  margin: 0 5px;
+}
+.abt_btns .icon_box i {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+/* review_section */
+
+.review_section {
+  padding: 40px 0;
+}
+
+.review_section .reviews {
+  margin-top: 25px;
+}
+.review_top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.review_top img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.review_top .name {
+  align-self: center;
+}
+.review_top h5 {
+  color: #130f40;
+  font-size: 20px;
+  font-weight: 700;
+}
+.review_top i {
+  color: #2ecc71;
+}
+.review_section p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #636e72;
+  text-align: justify;
+  line-height: 1.5;
+}
+.review_top .third i {
+  font-size: 30px;
+  color: #636e72;
+}
+.review_item {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.justify-center {
+  justify-content: center;
 }
