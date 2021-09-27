@@ -1,0 +1,13 @@
+@media only screen and (max-width: 500px) {
+  body {
+    background: red;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 100px) and (max-width: 200px) {
+  body {
+    background: purple;
+  }
+}

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.row {
+  display: flex;
+}
+.col-20 {
+  flex-basis: 19%;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+.col-30 {
+  flex-basis: 29%;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+.col-40 {
+  flex-basis: 39%;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+.col-50 {
+  flex-basis: 49%;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+/* #parent {
+  height: 150px;
+  width: 250px;
+  background: green;
+  position: relative;
+}
+#child {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+} */
+
+#parent {
+  height: 100px;
+  width: 100px;
+  background: red;
+  animation-name: change_bg;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+img {
+  animation-name: random;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+h1 {
+  font-size: 150px;
+  color: green;
+}
+@keyframes random {
+  0% {
+    transform: scale(0.5);
+  }
+  25% {
+    transform: scale(1);
+  }
+  55% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* @keyframes change_bg {
+  from {
+    background: green;
+    transform: rotate(150deg);
+  }
+  to {
+    background: yellow;
+    transform: rotate(250deg);
+  }
+} */
+
+@keyframes change_bg {
+  0% {
+    transform: rotate(100deg);
+    background: teal;
+  }
+  10% {
+    transform: rotate(120deg);
+  }
+  40% {
+    transform: rotate(250deg);
+    background: purple;
+  }
+  50% {
+    transform: rotate(100deg);
+    background: tomato;
+  }
+  80% {
+    transform: rotate(200deg);
+  }
+  100% {
+    transform: rotate(200deg);
+    background: red;
+  }
+}
