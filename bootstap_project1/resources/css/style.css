@@ -124,3 +124,24 @@ nav .nav_icons i:hover {
 .contact_info li:hover {
   transform: translateX(50px);
 }
+
+footer {
+  padding: 40px 0;
+  border-top: 1px solid #000;
+}
+footer p span {
+  color: #e67e22;
+}
+
+/* cart */
+
+.cart {
+  width: 35%;
+  border-radius: 5px;
+  background: #fff;
+  display: none;
+  position: absolute;
+  right: -100%;
+  top: 15%;
+  z-index: 50;
+}
