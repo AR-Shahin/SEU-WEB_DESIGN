@@ -6,24 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #box1,#box2{
-            height: 100px;
-            width: 300px;
-            border: 1px solid red;
-            box-sizing: border-box;
-            overflow-x: scroll;
+        .container{
+            width: 500px;
+            margin: 50px auto;
         }
-        #box2{
-            padding: 50px;
+
+        
+        .heart{
+            position: relative;
+            height: 160px;
+            width: 100px;
+            background: #d63031;
+            border-radius: 200px 200px 0  0;
+            transform: rotate(45deg);
+        }
+        .heart::before{
+            content: '';
+            position: absolute;
+            background: #d63031;
+            height: 160px;
+            width: 100px;
+            transform: rotate(-90deg);
+            border-radius: 200px 200px 0  0;
+            left: -30px;
+            top: 30px;
         }
     </style>
 </head>
 <body>
-    <h1>Heading</h1>
-    <div id="box1"></div>
-    <br>
-    <div id="box2">
-        <p>Loreme</p>
+    <div class="container">
+        <div class="heart"></div>
     </div>
 </body>
 </html>
