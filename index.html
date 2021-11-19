@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB</title>
     <style>
-        .container{
-            width: 500px;
-            margin: 50px auto;
-        }
+      .container {
+        width: 500px;
+        margin: 50px auto;
+      }
 
-        
-        .heart{
-            position: relative;
-            height: 160px;
-            width: 100px;
-            background: #d63031;
-            border-radius: 200px 200px 0  0;
-            transform: rotate(45deg);
-        }
-        .heart::before{
-            content: '';
-            position: absolute;
-            background: #d63031;
-            height: 160px;
-            width: 100px;
-            transform: rotate(-90deg);
-            border-radius: 200px 200px 0  0;
-            left: -30px;
-            top: 30px;
-        }
+      .heart {
+        position: relative;
+        height: 160px;
+        width: 100px;
+        background: #d63031;
+        border-radius: 200px 200px 0 0;
+        transform: rotate(45deg);
+      }
+      .heart::before {
+        content: "";
+        position: absolute;
+        background: #d63031;
+        height: 160px;
+        width: 100px;
+        transform: rotate(-90deg);
+        border-radius: 200px 200px 0 0;
+        left: -30px;
+        top: 30px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="heart"></div>
+      <div class="heart"></div>
     </div>
-</body>
+  </body>
 </html>
